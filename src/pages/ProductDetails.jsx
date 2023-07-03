@@ -42,7 +42,7 @@ const ProductDetails = () => {
   };
 
   // destructure product
-  const { image, title, price, description } = product;
+  const { image, title, price, description, category } = product;
 
   return (
     <section className="pt-32 pb-12 lg:py-32 h-screen flex items-center">
@@ -57,6 +57,7 @@ const ProductDetails = () => {
             />
           </div>
           <div className="flex-1 text-center md:text-left">
+            <div className="uppercase font-normal">{category}</div>
             <h1 className="text-[26px] font-medium mb-2 mx-auto lg:max-0">
               {title}
             </h1>
